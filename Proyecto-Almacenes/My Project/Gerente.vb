@@ -1,11 +1,9 @@
 ﻿Public Class Gerente
     Inherits Empleado
 
-    'Campos privados
     Private _porcentajeBono As Decimal
     Private _personasACargo As Integer
 
-    'Propiedad PorcentajeBono (5 a 40)
     Public Property PorcentajeBono As Decimal
         Get
             Return _porcentajeBono
@@ -13,7 +11,7 @@
         Set(value As Decimal)
 
             If value < 5 Or value > 40 Then
-                Throw New Exception("El porcentaje de bono debe estar entre 5 y 40.")
+                Throw New Exception("El bono debe estar entre 5 y 40%.")
             End If
 
             _porcentajeBono = value
@@ -21,7 +19,6 @@
         End Set
     End Property
 
-    'Propiedad PersonasACargo (1 a 50)
     Public Property PersonasACargo As Integer
         Get
             Return _personasACargo
@@ -29,7 +26,7 @@
         Set(value As Integer)
 
             If value < 1 Or value > 50 Then
-                Throw New Exception("Las personas a cargo deben estar entre 1 y 50.")
+                Throw New Exception("Personas a cargo deben ser entre 1 y 50.")
             End If
 
             _personasACargo = value
@@ -37,7 +34,6 @@
         End Set
     End Property
 
-    'Constructor
     Public Sub New(nombre As String,
                    rfc As String,
                    salarioBase As Decimal,
@@ -52,20 +48,19 @@
 
     End Sub
 
-    'Implementación del método abstracto
     Public Overrides Function CalcularPagoMensual() As Decimal
 
         Return SalarioBase + (SalarioBase * PorcentajeBono / 100)
 
     End Function
 
-    'Override de ObtenerFicha
-    Public Shadows Function ObtenerFicha() As String
+    Public Overrides Function ObtenerFicha() As String
 
-        Return MyBase.ObtenerFicha() & vbCrLf &
+        Return MyBase.ObtenerFicha() &
                $"Porcentaje Bono: {PorcentajeBono}%" & vbCrLf &
                $"Personas a Cargo: {PersonasACargo}" & vbCrLf &
-               $"Pago Mensual: {CalcularPagoMensual():C}"
+               $"Pago Mensual: {CalcularPagoMensual():C}" & vbCrLf &
+               "====================="
 
     End Function
 
