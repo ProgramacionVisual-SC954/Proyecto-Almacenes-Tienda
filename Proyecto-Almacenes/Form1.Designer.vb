@@ -337,7 +337,7 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlDarkDark
-        ClientSize = New Size(907, 552)
+        ClientSize = New Size(1171, 589)
         Controls.Add(txthorase)
         Controls.Add(txtturno)
         Controls.Add(txtdeptoO)
