@@ -1,6 +1,8 @@
 Public Class Operario
     Inherits Empleado
 
+    ' Campos específicos para Operario
+
     Private _turno As String
     Private _horasExtras As Decimal
 
