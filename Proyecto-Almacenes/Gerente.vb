@@ -3,19 +3,18 @@
 
     Private _porcentajeBono As Decimal
     Private _personasACargo As Integer
-    'Campos privados
     Private _porcentajeBono As Decimal
     Private _personasACargo As Integer
 
-    'Propiedad PorcentajeBono (5 a 40)
+    ' Propiedad PorcentajeBono
     Public Property PorcentajeBono As Decimal
         Get
             Return _porcentajeBono
         End Get
         Set(value As Decimal)
 
-            If value < 5 Or value > 40 Then
-                Throw New Exception("El porcentaje de bono debe estar entre 5 y 40.")
+            If Not ModuloValidaciones.EsBonoValido(CInt(value)) Then
+                Throw New Exception("El porcentaje de bono debe estar entre 5% y 40%.")
             End If
 
             _porcentajeBono = value
@@ -23,14 +22,14 @@
         End Set
     End Property
 
-    'Propiedad PersonasACargo (1 a 50)
+    ' Propiedad PersonasACargo
     Public Property PersonasACargo As Integer
         Get
             Return _personasACargo
         End Get
         Set(value As Integer)
 
-            If value < 1 Or value > 50 Then
+            If value < 1 OrElse value > 50 Then
                 Throw New Exception("Las personas a cargo deben estar entre 1 y 50.")
             End If
 
@@ -39,7 +38,7 @@
         End Set
     End Property
 
-    'Constructor
+    ' Constructor
     Public Sub New(nombre As String,
                    rfc As String,
                    salarioBase As Decimal,
@@ -54,20 +53,20 @@
 
     End Sub
 
-    'Implementación del método abstracto
+    ' Implementación del método abstracto
     Public Overrides Function CalcularPagoMensual() As Decimal
 
         Return SalarioBase + (SalarioBase * PorcentajeBono / 100)
 
     End Function
 
-    'Override de ObtenerFicha
-    Public Shadows Function ObtenerFicha() As String
+    ' Override de ObtenerFicha
+    Public Overrides Function ObtenerFicha() As String
 
-        Return MyBase.ObtenerFicha() & vbCrLf &
+        Return MyBase.ObtenerFicha() &
                $"Porcentaje Bono: {PorcentajeBono}%" & vbCrLf &
                $"Personas a Cargo: {PersonasACargo}" & vbCrLf &
-               $"Pago Mensual: {CalcularPagoMensual():C}"
+               $"Pago Mensual: {ModuloValidaciones.FormatearMoneda(CalcularPagoMensual())}" & vbCrLf
 
     End Function
 
@@ -130,5 +129,4 @@
                "====================="
 
     End Function
-
 End Class
