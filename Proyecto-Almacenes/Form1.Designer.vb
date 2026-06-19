@@ -423,9 +423,8 @@ Partial Class Form1
         Label12.Font = New Font("Century", 12F, FontStyle.Bold)
         Label12.Location = New Point(821, 507)
         Label12.Name = "Label12"
-        Label12.Size = New Size(71, 22)
+        Label12.Size = New Size(2, 22)
         Label12.TabIndex = 38
-        Label12.Text = "412554"
         ' 
         ' Label13
         ' 
@@ -435,9 +434,8 @@ Partial Class Form1
         Label13.Font = New Font("Century", 12F, FontStyle.Bold)
         Label13.Location = New Point(861, 562)
         Label13.Name = "Label13"
-        Label13.Size = New Size(71, 22)
+        Label13.Size = New Size(2, 22)
         Label13.TabIndex = 39
-        Label13.Text = "412554"
         ' 
         ' Form1
         ' 
@@ -530,4 +528,7 @@ Partial Class Form1
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
 
+    Private Sub lblnombre_Click(sender As Object, e As EventArgs) Handles lblnombre.Click
+
+    End Sub
 End Class
