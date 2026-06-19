@@ -3,8 +3,6 @@
 
     Private _porcentajeBono As Decimal
     Private _personasACargo As Integer
-    Private _porcentajeBono As Decimal
-    Private _personasACargo As Integer
 
     ' Propiedad PorcentajeBono
     Public Property PorcentajeBono As Decimal
