@@ -134,9 +134,9 @@ Partial Class Verdetalles
         Label6.Font = New Font("Palatino Linotype", 14.25F, FontStyle.Bold)
         Label6.Location = New Point(256, 64)
         Label6.Name = "Label6"
-        Label6.Size = New Size(74, 28)
+        Label6.Size = New Size(85, 28)
         Label6.TabIndex = 7
-        Label6.Text = "Label6"
+        Label6.Text = "nombre"
         Label6.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Label7
@@ -148,9 +148,9 @@ Partial Class Verdetalles
         Label7.Font = New Font("Palatino Linotype", 14.25F, FontStyle.Bold)
         Label7.Location = New Point(256, 97)
         Label7.Name = "Label7"
-        Label7.Size = New Size(74, 28)
+        Label7.Size = New Size(89, 28)
         Label7.TabIndex = 8
-        Label7.Text = "Label7"
+        Label7.Text = "sistemas"
         Label7.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Label8
@@ -162,9 +162,9 @@ Partial Class Verdetalles
         Label8.Font = New Font("Palatino Linotype", 14.25F, FontStyle.Bold)
         Label8.Location = New Point(256, 132)
         Label8.Name = "Label8"
-        Label8.Size = New Size(74, 28)
+        Label8.Size = New Size(47, 28)
         Label8.TabIndex = 9
-        Label8.Text = "Label8"
+        Label8.Text = "jefe"
         Label8.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Label9
@@ -176,9 +176,9 @@ Partial Class Verdetalles
         Label9.Font = New Font("Palatino Linotype", 14.25F, FontStyle.Bold)
         Label9.Location = New Point(256, 170)
         Label9.Name = "Label9"
-        Label9.Size = New Size(74, 28)
+        Label9.Size = New Size(51, 28)
         Label9.TabIndex = 10
-        Label9.Text = "Label9"
+        Label9.Text = "20%"
         Label9.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Label10
@@ -190,9 +190,9 @@ Partial Class Verdetalles
         Label10.Font = New Font("Palatino Linotype", 14.25F, FontStyle.Bold)
         Label10.Location = New Point(256, 207)
         Label10.Name = "Label10"
-        Label10.Size = New Size(84, 28)
+        Label10.Size = New Size(24, 28)
         Label10.TabIndex = 11
-        Label10.Text = "Label10"
+        Label10.Text = "6"
         Label10.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Label11

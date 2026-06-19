@@ -59,14 +59,14 @@ Partial Class Form1
         Label5 = New Label()
         Label10 = New Label()
         Label11 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
+        Label12 = New Label()
+        Label13 = New Label()
         SuspendLayout()
         ' 
         ' btnAG
         ' 
         btnAG.BackColor = SystemColors.AppWorkspace
-        btnAG.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        btnAG.Font = New Font("Century", 12F, FontStyle.Bold)
         btnAG.Location = New Point(193, 342)
         btnAG.Name = "btnAG"
         btnAG.Size = New Size(189, 36)
@@ -78,7 +78,7 @@ Partial Class Form1
         ' 
         lblnombre.AutoSize = True
         lblnombre.BorderStyle = BorderStyle.Fixed3D
-        lblnombre.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        lblnombre.Font = New Font("Century", 12F, FontStyle.Bold)
         lblnombre.Location = New Point(76, 95)
         lblnombre.Name = "lblnombre"
         lblnombre.Size = New Size(81, 22)
@@ -89,7 +89,7 @@ Partial Class Form1
         ' 
         lblrfc.AutoSize = True
         lblrfc.BorderStyle = BorderStyle.Fixed3D
-        lblrfc.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        lblrfc.Font = New Font("Century", 12F, FontStyle.Bold)
         lblrfc.Location = New Point(76, 126)
         lblrfc.Name = "lblrfc"
         lblrfc.Size = New Size(54, 22)
@@ -100,7 +100,7 @@ Partial Class Form1
         ' 
         lblsalario.AutoSize = True
         lblsalario.BorderStyle = BorderStyle.Fixed3D
-        lblsalario.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        lblsalario.Font = New Font("Century", 12F, FontStyle.Bold)
         lblsalario.Location = New Point(76, 159)
         lblsalario.Name = "lblsalario"
         lblsalario.Size = New Size(94, 22)
@@ -111,7 +111,7 @@ Partial Class Form1
         ' 
         lbldepto.AutoSize = True
         lbldepto.BorderStyle = BorderStyle.Fixed3D
-        lbldepto.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        lbldepto.Font = New Font("Century", 12F, FontStyle.Bold)
         lbldepto.Location = New Point(76, 192)
         lbldepto.Name = "lbldepto"
         lbldepto.Size = New Size(64, 22)
@@ -122,7 +122,7 @@ Partial Class Form1
         ' 
         lblbono.AutoSize = True
         lblbono.BorderStyle = BorderStyle.Fixed3D
-        lblbono.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        lblbono.Font = New Font("Century", 12F, FontStyle.Bold)
         lblbono.Location = New Point(76, 225)
         lblbono.Name = "lblbono"
         lblbono.Size = New Size(63, 22)
@@ -132,7 +132,7 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        Label2.Font = New Font("Century", 12F, FontStyle.Bold)
         Label2.Location = New Point(89, 247)
         Label2.Name = "Label2"
         Label2.Size = New Size(0, 20)
@@ -153,7 +153,7 @@ Partial Class Form1
         lblprscargo.AutoSize = True
         lblprscargo.BackColor = SystemColors.GrayText
         lblprscargo.BorderStyle = BorderStyle.Fixed3D
-        lblprscargo.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        lblprscargo.Font = New Font("Century", 12F, FontStyle.Bold)
         lblprscargo.Location = New Point(76, 259)
         lblprscargo.Name = "lblprscargo"
         lblprscargo.Size = New Size(113, 22)
@@ -249,7 +249,7 @@ Partial Class Form1
         lblhorasextra.AutoSize = True
         lblhorasextra.BackColor = SystemColors.GrayText
         lblhorasextra.BorderStyle = BorderStyle.Fixed3D
-        lblhorasextra.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        lblhorasextra.Font = New Font("Century", 12F, FontStyle.Bold)
         lblhorasextra.Location = New Point(432, 259)
         lblhorasextra.Name = "lblhorasextra"
         lblhorasextra.Size = New Size(118, 22)
@@ -269,7 +269,7 @@ Partial Class Form1
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        Label4.Font = New Font("Century", 12F, FontStyle.Bold)
         Label4.Location = New Point(452, 247)
         Label4.Name = "Label4"
         Label4.Size = New Size(0, 20)
@@ -279,7 +279,7 @@ Partial Class Form1
         ' 
         lblturno.AutoSize = True
         lblturno.BorderStyle = BorderStyle.Fixed3D
-        lblturno.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        lblturno.Font = New Font("Century", 12F, FontStyle.Bold)
         lblturno.Location = New Point(432, 227)
         lblturno.Name = "lblturno"
         lblturno.Size = New Size(67, 22)
@@ -290,7 +290,7 @@ Partial Class Form1
         ' 
         Label6.AutoSize = True
         Label6.BorderStyle = BorderStyle.Fixed3D
-        Label6.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        Label6.Font = New Font("Century", 12F, FontStyle.Bold)
         Label6.Location = New Point(432, 192)
         Label6.Name = "Label6"
         Label6.Size = New Size(64, 22)
@@ -301,7 +301,7 @@ Partial Class Form1
         ' 
         Label7.AutoSize = True
         Label7.BorderStyle = BorderStyle.Fixed3D
-        Label7.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        Label7.Font = New Font("Century", 12F, FontStyle.Bold)
         Label7.Location = New Point(432, 159)
         Label7.Name = "Label7"
         Label7.Size = New Size(94, 22)
@@ -312,7 +312,7 @@ Partial Class Form1
         ' 
         Label8.AutoSize = True
         Label8.BorderStyle = BorderStyle.Fixed3D
-        Label8.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        Label8.Font = New Font("Century", 12F, FontStyle.Bold)
         Label8.Location = New Point(432, 127)
         Label8.Name = "Label8"
         Label8.Size = New Size(54, 22)
@@ -323,7 +323,7 @@ Partial Class Form1
         ' 
         Label9.AutoSize = True
         Label9.BorderStyle = BorderStyle.Fixed3D
-        Label9.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        Label9.Font = New Font("Century", 12F, FontStyle.Bold)
         Label9.Location = New Point(432, 95)
         Label9.Name = "Label9"
         Label9.Size = New Size(81, 22)
@@ -333,7 +333,7 @@ Partial Class Form1
         ' btnoperador
         ' 
         btnoperador.BackColor = SystemColors.AppWorkspace
-        btnoperador.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        btnoperador.Font = New Font("Century", 12F, FontStyle.Bold)
         btnoperador.Location = New Point(556, 342)
         btnoperador.Name = "btnoperador"
         btnoperador.Size = New Size(189, 36)
@@ -362,7 +362,7 @@ Partial Class Form1
         ' Button1
         ' 
         Button1.BackColor = SystemColors.AppWorkspace
-        Button1.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        Button1.Font = New Font("Century", 12F, FontStyle.Bold)
         Button1.Location = New Point(361, 576)
         Button1.Name = "Button1"
         Button1.Size = New Size(189, 36)
@@ -373,7 +373,7 @@ Partial Class Form1
         ' Button2
         ' 
         Button2.BackColor = SystemColors.AppWorkspace
-        Button2.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        Button2.Font = New Font("Century", 12F, FontStyle.Bold)
         Button2.Location = New Point(361, 493)
         Button2.Name = "Button2"
         Button2.Size = New Size(189, 36)
@@ -396,7 +396,7 @@ Partial Class Form1
         Label10.AutoSize = True
         Label10.BackColor = SystemColors.GrayText
         Label10.BorderStyle = BorderStyle.Fixed3D
-        Label10.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        Label10.Font = New Font("Century", 12F, FontStyle.Bold)
         Label10.Location = New Point(613, 507)
         Label10.Name = "Label10"
         Label10.Size = New Size(179, 22)
@@ -408,35 +408,45 @@ Partial Class Form1
         Label11.AutoSize = True
         Label11.BackColor = SystemColors.GrayText
         Label11.BorderStyle = BorderStyle.Fixed3D
-        Label11.Font = New Font("Century", 12.0F, FontStyle.Bold)
+        Label11.Font = New Font("Century", 12F, FontStyle.Bold)
         Label11.Location = New Point(613, 562)
         Label11.Name = "Label11"
         Label11.Size = New Size(230, 22)
         Label11.TabIndex = 37
         Label11.Text = "Total de Nomina Mensual:"
         ' 
-        ' TextBox1
+        ' Label12
         ' 
-        TextBox1.Location = New Point(860, 506)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(62, 23)
-        TextBox1.TabIndex = 38
+        Label12.AutoSize = True
+        Label12.BackColor = SystemColors.GrayText
+        Label12.BorderStyle = BorderStyle.Fixed3D
+        Label12.Font = New Font("Century", 12F, FontStyle.Bold)
+        Label12.Location = New Point(821, 507)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(71, 22)
+        Label12.TabIndex = 38
+        Label12.Text = "412554"
         ' 
-        ' TextBox2
+        ' Label13
         ' 
-        TextBox2.Location = New Point(860, 561)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(62, 23)
-        TextBox2.TabIndex = 39
+        Label13.AutoSize = True
+        Label13.BackColor = SystemColors.GrayText
+        Label13.BorderStyle = BorderStyle.Fixed3D
+        Label13.Font = New Font("Century", 12F, FontStyle.Bold)
+        Label13.Location = New Point(861, 562)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(71, 22)
+        Label13.TabIndex = 39
+        Label13.Text = "412554"
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlDarkDark
         ClientSize = New Size(956, 715)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(Label13)
+        Controls.Add(Label12)
         Controls.Add(Label11)
         Controls.Add(Label10)
         Controls.Add(Label5)
@@ -517,7 +527,7 @@ Partial Class Form1
     Friend WithEvents Label5 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As Label
 
 End Class
