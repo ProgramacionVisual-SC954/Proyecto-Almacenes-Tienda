@@ -26,4 +26,12 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnoperador.Click
 
     End Sub
+
+    Private Sub Label1_Click_1(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
+
+    End Sub
 End Class
