@@ -442,7 +442,7 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlDarkDark
-        ClientSize = New Size(956, 715)
+        ClientSize = New Size(1171, 589)
         Controls.Add(Label13)
         Controls.Add(Label12)
         Controls.Add(Label11)
@@ -518,6 +518,7 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents btnoperador As Button
+
     Friend WithEvents Label1 As Label
     Friend WithEvents ListView1 As ListView
     Friend WithEvents Button1 As Button
@@ -531,4 +532,5 @@ Partial Class Form1
     Private Sub lblnombre_Click(sender As Object, e As EventArgs) Handles lblnombre.Click
 
     End Sub
+
 End Class
