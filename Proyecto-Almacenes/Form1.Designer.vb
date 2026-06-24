@@ -52,6 +52,15 @@ Partial Class Form1
         Label8 = New Label()
         Label9 = New Label()
         btnoperador = New Button()
+        Label1 = New Label()
+        ListView1 = New ListView()
+        Button1 = New Button()
+        Button2 = New Button()
+        Label5 = New Label()
+        Label10 = New Label()
+        Label11 = New Label()
+        Label12 = New Label()
+        Label13 = New Label()
         SuspendLayout()
         ' 
         ' btnAG
@@ -332,12 +341,117 @@ Partial Class Form1
         btnoperador.Text = "+ Agregar Operador"
         btnoperador.UseVisualStyleBackColor = False
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Impact", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(47, 411)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(281, 34)
+        Label1.TabIndex = 31
+        Label1.Text = "Listado de Empleados:"
+        ' 
+        ' ListView1
+        ' 
+        ListView1.Location = New Point(57, 460)
+        ListView1.Name = "ListView1"
+        ListView1.Size = New Size(271, 192)
+        ListView1.TabIndex = 32
+        ListView1.UseCompatibleStateImageBehavior = False
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = SystemColors.AppWorkspace
+        Button1.Font = New Font("Century", 12F, FontStyle.Bold)
+        Button1.Location = New Point(361, 576)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(189, 36)
+        Button1.TabIndex = 33
+        Button1.Text = "Eliminar  x"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = SystemColors.AppWorkspace
+        Button2.Font = New Font("Century", 12F, FontStyle.Bold)
+        Button2.Location = New Point(361, 493)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(189, 36)
+        Button2.TabIndex = 34
+        Button2.Text = "Ver Detalles:"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Impact", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(601, 460)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(349, 34)
+        Label5.TabIndex = 35
+        Label5.Text = "Resumen de Nomina Global:"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.BackColor = SystemColors.GrayText
+        Label10.BorderStyle = BorderStyle.Fixed3D
+        Label10.Font = New Font("Century", 12F, FontStyle.Bold)
+        Label10.Location = New Point(613, 507)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(179, 22)
+        Label10.TabIndex = 36
+        Label10.Text = "Total de Empleados:"
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.BackColor = SystemColors.GrayText
+        Label11.BorderStyle = BorderStyle.Fixed3D
+        Label11.Font = New Font("Century", 12F, FontStyle.Bold)
+        Label11.Location = New Point(613, 562)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(230, 22)
+        Label11.TabIndex = 37
+        Label11.Text = "Total de Nomina Mensual:"
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.BackColor = SystemColors.GrayText
+        Label12.BorderStyle = BorderStyle.Fixed3D
+        Label12.Font = New Font("Century", 12F, FontStyle.Bold)
+        Label12.Location = New Point(821, 507)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(2, 22)
+        Label12.TabIndex = 38
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.BackColor = SystemColors.GrayText
+        Label13.BorderStyle = BorderStyle.Fixed3D
+        Label13.Font = New Font("Century", 12F, FontStyle.Bold)
+        Label13.Location = New Point(861, 562)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(2, 22)
+        Label13.TabIndex = 39
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlDarkDark
         ClientSize = New Size(1171, 589)
+        Controls.Add(Label13)
+        Controls.Add(Label12)
+        Controls.Add(Label11)
+        Controls.Add(Label10)
+        Controls.Add(Label5)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
+        Controls.Add(ListView1)
+        Controls.Add(Label1)
         Controls.Add(txthorase)
         Controls.Add(txtturno)
         Controls.Add(txtdeptoO)
@@ -404,5 +518,19 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents btnoperador As Button
+
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As Label
+
+    Private Sub lblnombre_Click(sender As Object, e As EventArgs) Handles lblnombre.Click
+
+    End Sub
 
 End Class
